@@ -4,8 +4,6 @@ import path from 'path'
 
 const nextConfig: NextConfig = {
   basePath: '/mason',
-  assetPrefix: '/mason/',
-  output: 'export',
   reactStrictMode: true,
   images: {
     remotePatterns: [
@@ -15,6 +13,7 @@ const nextConfig: NextConfig = {
         port: '',
       },
     ],
+    unoptimized: true, // Required for Cloudflare Pages
   },
   turbopack: {
     // Force Turbopack to recognize the current folder as the root
