@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[22016,["/mason/_next/static/chunks/225f341c6b72d284.js","/mason/_next/static/chunks/81e5c60ab7f06e6f.js","/mason/_next/static/chunks/d2be314c3ece3fbe.js"],""]
+3:I[97367,["/mason/_next/static/chunks/225f341c6b72d284.js","/mason/_next/static/chunks/81e5c60ab7f06e6f.js","/mason/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"Ng8GVD51Gpvqc-3uD28Yw","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen flex items-center justify-center bg-gray-50 pt-20","children":["$","div",null,{"className":"text-center px-4","children":[["$","h1",null,{"className":"text-6xl font-bold text-gray-900 mb-4","children":"404"}],["$","h2",null,{"className":"text-3xl font-bold text-gray-700 mb-4","children":"Page Not Found"}],["$","p",null,{"className":"text-xl text-gray-600 mb-8","children":"Sorry, we couldn't find the page you're looking for."}],["$","$L2",null,{"href":"/","className":"inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200","children":"Go Home"}]]}]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+5:null

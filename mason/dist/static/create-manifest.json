@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "createdAt": "2026-02-27T20:01:55.711Z",
+  "workspaces": [
+    {
+      "name": "default",
+      "title": "Mason",
+      "basePath": "/",
+      "projectId": "jarqkhyz",
+      "dataset": "production",
+      "icon": null,
+      "mediaLibrary": {
+        "enabled": false,
+        "__internal": {}
+      },
+      "schema": "3a30d612.create-schema.json",
+      "tools": "d8640c31.create-tools.json"
+    }
+  ],
+  "studioVersion": "5.12.0"
+}
