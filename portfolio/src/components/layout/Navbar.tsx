@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Menu, X, Code2, Home, User, Briefcase, Mail } from 'lucide-react'
+import { Menu, X, Code2, Home, User, Briefcase } from 'lucide-react'
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
