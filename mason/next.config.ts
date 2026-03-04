@@ -3,9 +3,9 @@ import type {NextConfig} from 'next'
 import path from 'path'
 
 const nextConfig: NextConfig = {
-  basePath: '/mason',
-  reactStrictMode: true,
-  images: {
+    basePath: '',           // leave empty if using subdomain (mason.shippedbyrhi.com)
+    assetPrefix: '',        // leave empty for subdomain
+    reactStrictMode: true,  images: {
     remotePatterns: [
       {
         protocol: 'https',
@@ -13,10 +13,9 @@ const nextConfig: NextConfig = {
         port: '',
       },
     ],
-    unoptimized: true, // Required for Cloudflare Pages
+    unoptimized: true,
   },
   turbopack: {
-    // Force Turbopack to recognize the current folder as the root
     root: path.resolve(process.cwd()),
   },
 }

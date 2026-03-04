@@ -3,17 +3,8 @@
   "pages404": true,
   "appType": "app",
   "caseSensitive": false,
-  "basePath": "/mason",
+  "basePath": "",
   "redirects": [
-    {
-      "source": "/mason/",
-      "destination": "/mason",
-      "basePath": false,
-      "internal": true,
-      "priority": true,
-      "statusCode": 308,
-      "regex": "^/mason/$"
-    },
     {
       "source": "/:path+/",
       "destination": "/:path+",
@@ -25,13 +16,7 @@
   ],
   "headers": [],
   "rewrites": {
-    "beforeFiles": [
-      {
-        "source": "/mason//_next/:path+",
-        "destination": "/mason/_next/:path+",
-        "regex": "^/mason//_next(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))(?:/)?$"
-      }
-    ],
+    "beforeFiles": [],
     "afterFiles": [],
     "fallback": []
   },

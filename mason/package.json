@@ -7,7 +7,7 @@
   "scripts": {
  "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "npx serve@latest out",
     "export": "next export",
     "sanity": "sanity dev",
     "sanity:build": "sanity build",
