@@ -4,7 +4,9 @@ import path from 'path'
 
 const nextConfig: NextConfig = {
   basePath: '/mason',
+  assetPrefix: '/mason/',
   output: 'export',
+  reactStrictMode: true,
   images: {
     remotePatterns: [
       {
