@@ -6,7 +6,8 @@ import {schemaTypes} from './schemaTypes'
 export default defineConfig({
   name: 'default',
   title: 'Mason',
-
+  basePath: '/studio',
+  
   projectId: 'jarqkhyz',
   dataset: 'production',
 
