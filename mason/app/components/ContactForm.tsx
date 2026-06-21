@@ -15,18 +15,27 @@ export default function ContactForm() {
     e.preventDefault()
     setStatus('sending')
 
-    // Simulate form submission - replace with actual email service
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to send message')
+      }
+
       setStatus('success')
       setFormData({name: '', email: '', phone: '', message: ''})
       setTimeout(() => setStatus('idle'), 5000)
-    }, 1000)
-
-    // TODO: Integrate with email service like:
-    // - Resend (https://resend.com)
-    // - SendGrid
-    // - Nodemailer
-    // - FormSubmit (https://formsubmit.co)
+    } catch (error) {
+      console.error('Contact form submit failed:', error)
+      setStatus('error')
+      setTimeout(() => setStatus('idle'), 5000)
+    }
   }
 
   const handleChange = (

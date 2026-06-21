@@ -1,6 +1,7 @@
 'use client'
 
 import {urlFor} from '@/lib/sanity.image'
+import {PortableText} from '@portabletext/react'
 import Image from 'next/image'
 import type {SiteSettings} from '@/lib/types'
 
@@ -38,7 +39,7 @@ export default function AboutSection({settings}: AboutSectionProps) {
             )}
             {settings.aboutSection.content && (
               <div className="text-gray-600 leading-relaxed space-y-4">
-                <p>Add your about content in the Site Settings → About Section in Sanity Studio.</p>
+                <PortableText value={settings.aboutSection.content} />
               </div>
             )}
           </div>
