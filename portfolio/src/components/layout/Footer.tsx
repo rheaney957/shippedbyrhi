@@ -9,13 +9,13 @@ const Footer: React.FC = () => {
     {
       name: 'GitHub',
       icon: Github,
-      url: 'https://github.com/rhiannonheaney',
+      url: 'https://github.com/rheaney957',
       color: 'hover:text-gray-900',
     },
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      url: 'https://linkedin.com/in/rhiannonheaney',
+      url: 'https://linkedin.com/in/rhiannon-heaney',
       color: 'hover:text-blue-600',
     },
     {

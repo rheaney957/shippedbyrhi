@@ -1,0 +1,13 @@
+# Cloudflare Pages configuration
+# This file is used to configure redirects and other settings
+
+# Single Page Application (SPA) redirect
+# This ensures all routes are handled by React Router
+/*    /index.html   200
+
+# Security headers
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin

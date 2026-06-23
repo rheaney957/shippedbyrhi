@@ -1,32 +1,32 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Download, Code2, Palette, Zap, Users } from 'lucide-react'
+import { ArrowRight, Code2, Layers, Zap, Users } from 'lucide-react'
 
 const Home: React.FC = () => {
   const skills = [
     {
       icon: Code2,
-      title: 'Frontend Development',
-      description: 'Building robust applications with modern technologies',
+      title: 'Frontend Architecture',
+      description: 'Building scalable React & TypeScript applications for complex, data-heavy products',
       color: 'text-blue-500',
     },
     {
-      icon: Palette,
-      title: 'UI/UX Design',
-      description: 'Creating beautiful and intuitive user experiences',
+      icon: Layers,
+      title: 'Platform Modernisation',
+      description: 'Leading initiatives to modernise legacy apps and improve engineering standards',
       color: 'text-purple-500',
     },
     {
       icon: Zap,
-      title: 'Performance Optimization',
-      description: 'Optimizing applications for speed and efficiency',
+      title: 'Performance & Quality',
+      description: 'Optimising applications for speed, reliability, and exceptional user experience',
       color: 'text-yellow-500',
     },
     {
       icon: Users,
-      title: 'Team Collaboration',
-      description: 'Working effectively in agile development teams',
+      title: 'Technical Leadership',
+      description: 'Mentoring engineers, driving best practices, and delivering complex projects',
       color: 'text-green-500',
     },
   ]
@@ -70,7 +70,7 @@ const Home: React.FC = () => {
               className="mb-8"
             >
               <span className="inline-block px-4 py-2 rounded-full bg-primary-100 text-primary-700 text-sm font-medium mb-4">
-                Welcome to my portfolio
+                Senior Software Engineer
               </span>
               <h1 className="text-5xl md:text-7xl font-bold font-heading mb-6">
                 Hi, I'm{' '}
@@ -79,9 +79,9 @@ const Home: React.FC = () => {
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
-                A passionate{' '}
-                <span className="font-semibold text-primary-700">Frontend Developer</span>{' '}
-                who loves creating exceptional digital experiences that make a difference.
+                A{' '}
+                <span className="font-semibold text-primary-700">Senior Software Engineer</span>{' '}
+                with 6+ years of experience building and modernising large-scale React &amp; TypeScript applications in enterprise SaaS environments.
               </p>
             </motion.div>
 
@@ -96,10 +96,13 @@ const Home: React.FC = () => {
                 View My Work
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <button className="btn-secondary group">
-                <Download className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                Download CV
-              </button>
+              <Link
+                to="/about"
+                className="btn-secondary group"
+              >
+                About Me
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </motion.div>
 
             {/* Floating Animation Element */}
@@ -130,8 +133,8 @@ const Home: React.FC = () => {
               What I Do
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              I combine technical expertise with creative problem-solving to deliver
-              outstanding results across the full development stack.
+              I specialise in frontend architecture, performance optimisation, and scalable UI systems
+              for complex, data-heavy products.
             </p>
           </motion.div>
 
@@ -172,11 +175,11 @@ const Home: React.FC = () => {
             className="max-w-3xl mx-auto text-white"
           >
             <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">
-              Ready to bring your ideas to life?
+              Looking for a freelance developer?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Let's collaborate and create something extraordinary together.
-              I'm always excited to work on new challenging projects.
+              I build modern, high-performance websites and web applications for businesses.
+              Let's create something great together.
             </p>
             <a
               href="mailto:rhiannonheaney1@gmail.com"

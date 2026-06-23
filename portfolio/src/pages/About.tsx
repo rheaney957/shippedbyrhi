@@ -1,37 +1,71 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Download, MapPin, Calendar, Award } from 'lucide-react'
+import { MapPin, Calendar, Award, GraduationCap } from 'lucide-react'
 
 const About: React.FC = () => {
   const experiences = [
     {
-      company: 'Tech Company Inc.',
-      position: 'Senior Frontend Developer',
-      period: '2022 - Present',
-      description: 'Leading development of scalable web applications using React, TypeScript, and Node.js',
-      achievements: ['Led a team of 5 developers', 'Improved performance by 40%', 'Launched 3 major features'],
+      company: 'Rapid7',
+      position: 'Senior Software Engineer',
+      period: 'June 2025 – Present',
+      description: 'Leading front-end development, platform modernisation, and technical initiatives across enterprise cybersecurity products.',
+      achievements: [
+        'Leading complex, high-impact initiatives requiring strong ownership and technical judgement',
+        'Driving engineering quality through TypeScript, testing strategies, and frontend standards',
+        'Mentoring engineers through code reviews, technical guidance, and pair programming',
+      ],
     },
     {
-      company: 'Digital Agency Co.',
-      position: 'Frontend Developer',
-      period: '2020 - 2022',
-      description: 'Developed custom solutions for clients across various industries',
-      achievements: ['Delivered 15+ client projects', 'Maintained 99.9% uptime', 'Reduced costs by 30%'],
+      company: 'Rapid7',
+      position: 'Software Engineer II',
+      period: 'February 2024 – June 2025',
+      description: 'Delivered customer-facing features and platform modernisation for enterprise cybersecurity products.',
+      achievements: [
+        'Led front-end modernisation initiatives across multiple applications and shared services',
+        'Supported launch of Attack Surface Management (ASM) platform',
+        'Improved engineering quality and frontend development standards',
+      ],
     },
     {
-      company: 'Startup Solutions',
-      position: 'Junior Developer',
-      period: '2019 - 2020',
-      description: 'Started career building responsive web applications and learning best practices',
-      achievements: ['Completed 20+ projects', 'Learned 5+ technologies', 'Received promotion within 1 year'],
+      company: 'Rapid7',
+      position: 'User Experience Engineer II',
+      period: 'February 2023 – February 2024',
+      description: 'Built and enhanced UI systems for complex, data-heavy cybersecurity products.',
+      achievements: [
+        'Enhanced front-end tooling and developer experience',
+        'Expanded automated testing coverage and practices',
+        'Introduced modern development patterns across applications',
+      ],
+    },
+    {
+      company: 'Rapid7',
+      position: 'User Experience Engineer I',
+      period: 'June 2021 – February 2023',
+      description: 'Developed responsive, performant interfaces and contributed to component libraries.',
+      achievements: [
+        'Delivered customer-facing features focused on usability and reliability',
+        'Collaborated with Product, Design, UX, and Backend Engineering teams',
+        'Standardised key front-end workflows and reduced complexity',
+      ],
+    },
+    {
+      company: 'Rapid7',
+      position: 'User Experience Engineer Intern',
+      period: 'June 2019 – June 2021',
+      description: 'Started career building frontend applications and learning enterprise development practices.',
+      achievements: [
+        'Contributed to enterprise-scale React applications',
+        'Earned promotion through consistent delivery and technical growth',
+        'Developed strong foundations in TypeScript, React, and modern frontend practices',
+      ],
     },
   ]
 
   const skills = [
-    { category: 'Frontend', items: ['React', 'TypeScript', 'Next.js', 'Vue.js', 'Tailwind CSS'] },
-    { category: 'Backend', items: ['Node.js', 'Express', 'Python', 'PostgreSQL', 'MongoDB'] },
-    { category: 'Tools', items: ['Git', 'Docker', 'AWS', 'Figma', 'Jest'] },
-    { category: 'Soft Skills', items: ['Team Leadership', 'Problem Solving', 'Communication', 'Agile', 'Mentoring'] },
+    { category: 'Frontend & UI', items: ['TypeScript', 'React', 'JavaScript', 'SPA Architecture', 'Design Systems', 'Performance Optimisation'] },
+    { category: 'Modern React', items: ['Hooks', 'State Management', 'API Integration', 'Reusable UI Systems', 'Component Libraries'] },
+    { category: 'Testing & Quality', items: ['Unit Testing', 'Integration Testing', 'E2E Testing', 'Automated Testing', 'TDD'] },
+    { category: 'Tools & Practices', items: ['Vite', 'Webpack', 'Node.js', 'CI/CD', 'Monorepos', 'Agile', 'Git'] },
   ]
 
   return (
@@ -44,53 +78,37 @@ const About: React.FC = () => {
       {/* Hero Section */}
       <section className="section-padding bg-gradient-to-br from-blue-50 to-purple-50">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-4xl mx-auto">
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <h1 className="text-4xl md:text-5xl font-bold font-heading mb-6 text-dark-900">
                 About Me
               </h1>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                I'm a passionate Frontend developer with over 5 years of experience creating
-                digital solutions that matter. I believe in writing clean, efficient code and
-                building products that provide real value to users.
+                I'm a Senior Software Engineer with 6+ years of experience building and modernising
+                large-scale React and TypeScript applications in enterprise SaaS environments. I focus
+                on frontend architecture, performance, and scalable UI systems for complex, data-heavy products.
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies, contributing to
-                open-source projects, or enjoying the great outdoors. I'm always eager to learn
-                and take on new challenges.
+                I've progressed from Engineering Intern to Senior Software Engineer at Rapid7 through
+                consistent delivery, technical leadership, and ownership of complex projects. Outside of
+                my day job, I take on freelance work building modern websites for local businesses.
               </p>
-              <div className="flex flex-wrap gap-4 mb-8">
+              <div className="flex flex-wrap gap-6 mb-8">
                 <div className="flex items-center text-gray-600">
                   <MapPin className="h-5 w-5 mr-2 text-primary-600" />
-                  <span>Remote / Worldwide</span>
+                  <span>Belfast, Northern Ireland</span>
                 </div>
                 <div className="flex items-center text-gray-600">
                   <Calendar className="h-5 w-5 mr-2 text-primary-600" />
-                  <span>Available for work</span>
+                  <span>Available for freelance</span>
                 </div>
-              </div>
-              <button className="btn-primary">
-                <Download className="mr-2 h-5 w-5" />
-                Download Resume
-              </button>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="relative"
-            >
-              <div className="w-full max-w-md mx-auto">
-                <div className="aspect-square bg-gradient-to-br from-primary-400 to-purple-600 rounded-2xl p-1">
-                  <div className="w-full h-full bg-gray-200 rounded-xl flex items-center justify-center text-gray-500">
-                    {/* Replace with your actual photo */}
-                    <span className="text-lg">Your Photo Here</span>
-                  </div>
+                <div className="flex items-center text-gray-600">
+                  <GraduationCap className="h-5 w-5 mr-2 text-primary-600" />
+                  <span>BSc Business Information Technology, Queen's University Belfast</span>
                 </div>
               </div>
             </motion.div>

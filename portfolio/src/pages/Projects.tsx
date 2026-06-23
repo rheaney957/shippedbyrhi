@@ -3,77 +3,76 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { ExternalLink, Github, Eye, Filter, Search } from 'lucide-react'
 
-// Sample project data - replace with your actual projects
 const projectsData = [
   {
-    id: 'ecommerce-platform',
-    title: 'E-commerce Platform',
-    description: 'A Frontend e-commerce solution built with React, Node.js, and PostgreSQL featuring payment integration and admin dashboard.',
-    image: '/api/placeholder/600/400',
-    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Stripe'],
-    category: 'Frontend',
+    id: 'the-academy-dublin',
+    title: 'The Academy Dublin',
+    description: 'A modern website for The Academy Dublin, a popular live music and entertainment venue in Dublin city centre.',
+    image: '/images/academy.png',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+    category: 'Freelance',
     featured: true,
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/rhiannonheaney/project',
+    liveUrl: 'https://www.theacademydublin.com/',
+    githubUrl: 'https://github.com/rheaney957',
   },
   {
-    id: 'task-management-app',
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-    image: '/api/placeholder/600/400',
-    technologies: ['Vue.js', 'Express', 'Socket.io', 'MongoDB'],
-    category: 'Frontend',
-    featured: false,
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/rhiannonheaney/project',
-  },
-  {
-    id: 'mobile-fitness-app',
-    title: 'Mobile Fitness App',
-    description: 'A React Native fitness tracking app with workout plans, progress tracking, and social features.',
-    image: '/api/placeholder/600/400',
-    technologies: ['React Native', 'Firebase', 'Redux', 'Expo'],
-    category: 'Mobile',
+    id: 'limelight-belfast',
+    title: 'Limelight Belfast',
+    description: 'Website for Limelight Belfast, an iconic live music venue and nightclub in the heart of Belfast.',
+    image: '/images/limelight.png',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+    category: 'Freelance',
     featured: true,
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/rhiannonheaney/project',
+    liveUrl: 'https://www.limelightbelfast.com/',
+    githubUrl: 'https://github.com/rheaney957',
   },
   {
-    id: 'api-service',
-    title: 'RESTful API Service',
-    description: 'A scalable REST API built with Express.js and PostgreSQL, featuring authentication, rate limiting, and comprehensive documentation.',
-    image: '/api/placeholder/600/400',
-    technologies: ['Node.js', 'Express', 'PostgreSQL', 'JWT', 'Swagger'],
-    category: 'Backend',
-    featured: false,
-    liveUrl: null,
-    githubUrl: 'https://github.com/rhiannonheaney/project',
+    id: 'nicomedy',
+    title: 'NI Comedy',
+    description: 'A website for Northern Ireland\'s comedy scene, showcasing events, comedians, and upcoming shows across the region.',
+    image: '/images/nicomedy.png',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+    category: 'Freelance',
+    featured: true,
+    liveUrl: 'https://www.nicomedy.co.uk/',
+    githubUrl: 'https://github.com/rheaney957',
   },
   {
-    id: 'data-visualization',
-    title: 'Data Visualization Dashboard',
-    description: 'An interactive dashboard for visualizing complex datasets with charts, filters, and real-time data updates.',
-    image: '/api/placeholder/600/400',
-    technologies: ['React', 'D3.js', 'Python', 'FastAPI', 'WebSocket'],
-    category: 'Data Science',
+    id: 'emerge-belfast',
+    title: 'Emerge Belfast',
+    description: 'Website for Emerge Belfast, a creative events and entertainment company bringing unique experiences to the city.',
+    image: '/images/emerge.png',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+    category: 'Freelance',
     featured: false,
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/rhiannonheaney/project',
+    liveUrl: 'https://www.emergebelfast.com/',
+    githubUrl: 'https://github.com/rheaney957',
+  },
+  {
+    id: 'midaz-pms',
+    title: 'Midaz PMS',
+    description: 'A professional website for Midaz PMS, a property management software solution helping landlords and property managers streamline operations.',
+    image: '/images/midazpms.png',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+    category: 'Freelance',
+    featured: false,
+    liveUrl: 'https://www.midazpms.com/',
+    githubUrl: 'https://github.com/rheaney957',
   },
   {
     id: 'portfolio-website',
     title: 'Portfolio Website',
-    description: 'A modern, responsive portfolio website built with React and TypeScript, featuring smooth animations and optimized performance.',
-    image: '/api/placeholder/600/400',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    category: 'Frontend',
+    description: 'This portfolio site — a modern, responsive website built with React and TypeScript, featuring smooth animations and optimised performance.',
+    image: '/images/shippedbyrhi.png',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vite'],
+    category: 'Personal',
     featured: false,
     liveUrl: 'https://www.shippedbyrhi.com',
-    githubUrl: 'https://github.com/rhiannonheaney/project',
+    githubUrl: 'https://github.com/rheaney957',
   },
 ]
 
-const categories = ['All', 'Frontend', 'Frontend', 'Backend', 'Mobile', 'Data Science']
+const categories = ['All', 'Freelance', 'Personal']
 
 const Projects: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('All')
@@ -108,8 +107,8 @@ const Projects: React.FC = () => {
               My Projects
             </h1>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
-              A collection of projects showcasing my skills across different technologies and domains.
-              Each project represents a unique challenge and learning experience.
+              A collection of freelance websites I've built for businesses across Ireland and beyond.
+              Each project is crafted with modern technologies, responsive design, and performance in mind.
             </p>
           </motion.div>
         </div>
@@ -138,13 +137,13 @@ const Projects: React.FC = () => {
                 viewport={{ once: true }}
                 className="group relative bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
               >
-                <div className="aspect-video bg-gray-200 relative overflow-hidden">
+                <div className="aspect-video bg-gray-100 relative overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-dark-900">{project.title}</h3>
@@ -175,7 +174,7 @@ const Projects: React.FC = () => {
                         className="flex items-center text-primary-600 hover:text-primary-700 transition-colors"
                       >
                         <ExternalLink className="h-4 w-4 mr-1" />
-                        Live Demo
+                        Live Site
                       </a>
                     )}
                     <a
@@ -254,7 +253,7 @@ const Projects: React.FC = () => {
                 viewport={{ once: true }}
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
               >
-                <div className="aspect-video bg-gray-200 relative overflow-hidden">
+                <div className="aspect-video bg-gray-100 relative overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
